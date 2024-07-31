@@ -5,10 +5,11 @@
 
 .header {
     width: 100%;
-    height: 110px;
+    height: 10vh;
     border-bottom: 2px solid gray;
     position: fixed;
     background-color: white;
+    z-index: 999;
 }
 
 .container {
@@ -60,16 +61,98 @@
 .big-img {
     width: 100%;
     height: 90vh; 
-    margin-top: 100px;
+    margin-top: 10vh;
     object-fit: cover;
 }
 
 /**************************************************/
 
 .news-section {
-    padding: 100px 160px;
+    padding: 100px 250px;
 }
 
 .wrap-title {
-    font-size: 30px
+    font-size: 35px;
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+}
+.wrap-title:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 0%;
+    border-bottom: 4px solid #5784b8;
+}
+.title {
+    font-weight: 700;
+}
+
+.wrap-articles {
+    padding: 50px 10px;
+    width: 100%;
+    display: flex;
+}
+.big-art {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #DFDFDF;
+    border-width: 0 1px;
+}
+.wrap-small-articles {
+    width: 50%;
+    height: auto;
+}
+
+.bigArtImg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+.art-title-big {
+    font-size: 26px;
+    display: inline-block;
+    padding-bottom: 20px;
+    position: relative;
+}
+.art-title-big:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.outer-art-wrap {
+    max-width: 100%;
+    display: flex;
+}
+.small-art1, .small-art2 {
+    padding: 20px 20px;
+    width: 50%;
+    border: 1px solid #DFDFDF;
+    border-width: 0 1px 0 0;
+}
+.smallArtImg {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.art-title-small {
+    font-size: 18px;
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.art-title-small:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0px;
+    border-bottom: 1px solid #DFDFDF;
 }
